@@ -24,6 +24,8 @@ public class OrderEntity extends Auditable {
 	private Integer adults;
 	private Integer youths;
 	private Integer children;
+	@Builder.Default
 	private double total = 0.;
+	@Builder.Default
 	private double paid = 0.;
 }

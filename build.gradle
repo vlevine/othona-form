@@ -13,6 +13,14 @@ configurations {
         extendsFrom annotationProcessor
     }
 }
+bootJar {
+    manifest {
+        attributes('Implementation-Version': version)
+    }
+}
+jar {
+    enabled = false
+}
 
 repositories {
     mavenCentral()
