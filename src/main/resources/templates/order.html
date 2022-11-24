@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<div class="myStyleBlue" id="page" layout:fragment="content">
+    <div class="container">
+        <div class="mt-5">
+            <div class="text-center hero my-5">
+                <h2 class="mb-4">Order XXX</h2>
+                <form action="#" method="post" th:action="@{/order}" th:object="${order}">
+                    <input id='id' th:field="*{id}" type="hidden"/>
+                    <input id='email' th:field="*{email}" type="hidden"/>
+                    <div th:text="${order.email}">no email</div>
+                    <p>Your Name: <input th:field="*{name}"/></p>
+                    <p>Telephone number: <input th:field="*{telephone}"/></p>
+                    <p>Parish: <input th:field="*{parish}"/></p>
+                    <p>
+                        <button name="action" type="submit">Save</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

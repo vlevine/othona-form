@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<div class="myStyleBlue" id="page" layout:fragment="content">
+    <div class="container">
+        <div class="mt-5">
+            <div class="text-center hero my-5">
+                <h2 class="mb-4">Orders XXX</h2>
+                <div th:if="${ not#lists.isEmpty(orders)}">
+                    <table>
+                        <tr>
+                            <th>Email</th>
+                            <th>Name</th>
+                            <th>Parish</th>
+                        </tr>
+                        <tr th:each="order : ${orders}">
+                            <td th:text="${order.email}"></td>
+                            <td th:text="${order.name}"></td>
+                            <td th:text="${order.parish}"></td>
+                        </tr>
+                        <table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

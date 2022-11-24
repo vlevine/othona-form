@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Liturgy camp</title>
+
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css" rel="stylesheet">
+    <style th:inline="css">
+        .myStyleBlue {
+            background-color: #204a87;
+            color: antiquewhite;
+        }
+
+        .myStyleWhite {
+            background-color: antiquewhite;
+            color: darkblue;
+        }
+
+        a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #0d6efd;
+            text-decoration: none;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+        }
+
+        button input[type=submit] input[type=reset] input[type=file] {
+            background-color: #FFFFFF;
+            padding: 5px 10px;
+            border: 1px solid #FFFFFF;
+            margin: 5px 5px;
+            border-radius: 4px;
+        }
+
+        button:hover input[type=submit]:hover input[type=reset]:hover input[type=file]:hover {
+            border: 1px solid #A5C9EB;
+            background-color: #A5C9EB;
+        }
+
+        .imagebox {
+            width: 100%;
+            height: 700px;
+        }
+
+        .popupimg {
+            width: 100%;
+        }
+    </style>
+</head>
+</html>

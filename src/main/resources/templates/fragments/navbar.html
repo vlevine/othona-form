@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Spring MVC Security Quickstart</title>
+</head>
+<div class="myStyleBlue nav-container mb-3" th:fragment="navbar">
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <img alt="st Cedd" class="mb-3 app-logo" src="/stcedd.png" width="120"/>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="nav-link" href="/order">Home</a>
+                <a class="nav-link" th:href="@{/logout}">Log out</a>
+            </div>
+        </div>
+    </nav>
+</div>
+</html>
