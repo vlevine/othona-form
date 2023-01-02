@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: othona-form
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: othona-form
+  template:
+    metadata:
+      labels:
+        app: othona-form
+    spec:
+      containers:
+        - image: vlevine/othona-form
+          name: othona-form
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: test123
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:postgresql://postgresql:5432/othona
+            - name: SPRING_DATASOURCE_USERNAME
+              value: admin

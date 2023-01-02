@@ -1,0 +1,1 @@
+PGPASSWORD=test123 kubectl exec -it pod/postgres-5bb9d69b96-zcbxl --  psql -h localhost -U admin --password -p 5432 othona

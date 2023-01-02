@@ -26,10 +26,10 @@ docker-test-image:
 	docker build -t "othona-form:latest" .
 
 docker-test-run:
-	docker run -p 4080:4080 -d othona-form:latest
+	docker run -p 4080:4080 -d vlevine/othona-form:1.0.0
 
 package:
 	./gradlew build bootJar
 
 publish-docker:
-	docker build . --tag othona-form:latest
+	docker build . --tag vlevine/othona-form:1.0.0
